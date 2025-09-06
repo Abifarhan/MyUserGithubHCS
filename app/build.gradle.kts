@@ -78,14 +78,6 @@ dependencies {
 
     implementation(libs.glide)
     kapt(libs.glide.compiler)
-//
-//    // Http
-//    implementation(libs.bundles.retrofit)
-//
-//    // Sqlite
-//    implementation(libs.bundles.room)
-//    annotationProcessor(libs.room.compiler)
-//    kapt(libs.room.compiler)
 
     testImplementation(libs.kotlin.test)
     testImplementation(libs.kotlinx.coroutines.test)
