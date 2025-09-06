@@ -104,7 +104,14 @@ class HomeFragment : Fragment() {
                 return true
             }
 
-            override fun onQueryTextChange(newText: String?): Boolean = false
+            override fun onQueryTextChange(newText: String?): Boolean {
+                if (!newText.isNullOrEmpty()) {
+                    viewModel.searchUsers(newText)
+                }
+                return true
+            }
+
+
         })
     }
 

@@ -32,10 +32,10 @@ navigation = "2.7.7"
 
 mockk = "1.13.8"
 truth = "1.1.3"
-robolectric = "4.10.3"
 work = "2.8.1"
 hilt-work = "1.2.0"
 coreKtxVersion = "1.7.0"
+espressoContrib = "3.7.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -62,7 +62,6 @@ kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
-robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
 
 # Sqlite
 room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
@@ -88,8 +87,8 @@ androidx-work-testing = { group = "androidx.work", name = "work-testing", versio
 
 androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hilt-work" }
 androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hilt-work" }
-androidx-hilt-testing = { group = "androidx.hilt", name = "hilt-testing", version.ref = "hilt" }
 core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "coreKtxVersion" }
+androidx-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
