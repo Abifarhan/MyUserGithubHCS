@@ -41,6 +41,9 @@
       <SelectionState runConfigName="search_should_show_result()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="when_searching_a_and_click_first_result_should_navigate_to_detail()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>
