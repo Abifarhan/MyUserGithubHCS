@@ -100,4 +100,39 @@ For any questions or clarifications, feel free to reach out:
 - 💼 **LinkedIn**: [linkedin.com/in/abifarhan](https://linkedin.com/in/abifarhan)
 - 🐙 **GitHub**: [@Abifarhan](https://github.com/Abifarhan)
 
- 
+💡 Reflection: Challenges & Improvements
+🧩 Challenges
+
+1. Unit Testing with Hilt & MockK:
+    Unit testing using mocks (via MockK) helped improve efficiency and precision in isolating business logic. However, integrating Hilt for dependency injection in tests required careful setup to replace real dependencies with mocks while maintaining test reliability. 
+
+2. WorkManager for Periodic Notifications:
+    Scheduling notifications every 15 minutes using PeriodicWorkRequest faced limitations due to Android’s system-level background execution optimizations. WorkManager does not guarantee exact timing.
+    Solution: Use setInitialDelay() to control the first run and apply ExistingPeriodicWorkPolicy.REPLACE to prevent duplicate workers and ensure only one instance runs at a time. 
+
+
+
+🛠 Improvements
+
+1. Focus on Effective TDD:
+    Prioritize writing unit tests for UseCase and Repository layers before UI integration. This ensures business logic is correct and robust from the start. 
+
+2. Apply Clean Code & Separation of Concerns:
+    Clearly separate data, domain, and presentation layers. This makes the codebase more maintainable, readable, and easier to test in isolation. 
+
+3. Use MockK Minimally and Wisely:
+    Only mock critical external dependencies (e.g., APIs, databases). Avoid over-mocking, which can obscure real behavior and make tests harder to understand and maintain. 
+
+
+
+📚 Lessons Learned
+
+1. TDD is About Quality, Not Quantity:
+    One well-written test that validates core business logic is more valuable than ten trivial tests checking only getters or basic setters. 
+
+2. Clean Architecture Enables Better Testing:
+    With properly separated layers, UseCase classes can be tested independently—without needing UI components, database, or network. 
+
+3. Avoid Over-Engineering:
+    Favor solutions that are working, simple, and easy to understand over complex, clever implementations. Simplicity leads to better long-term maintainability. 
+     
