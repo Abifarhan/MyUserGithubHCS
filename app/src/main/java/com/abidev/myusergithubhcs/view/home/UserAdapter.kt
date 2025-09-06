@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.abidev.domain.UserDomainModel
-import com.abidev.usergithubporto.databinding.ItemUserBinding
+import com.abidev.domain.home.usecase.UserDomainModel
+import com.abidev.myusergithubhcs.databinding.ItemUserBinding
 import com.bumptech.glide.Glide
 
 class UserAdapter(

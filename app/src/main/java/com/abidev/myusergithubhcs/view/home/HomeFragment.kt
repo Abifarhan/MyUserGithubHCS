@@ -13,6 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.abidev.myusergithubhcs.databinding.FragmentHomeBinding
+import com.abidev.myusergithubhcs.presenter.home.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -46,7 +47,6 @@ class HomeFragment : Fragment() {
 
     private fun setupRecyclerView() {
         adapter = UserAdapter { user ->
-            // Navigasi ke detail dengan username
             val action = HomeFragmentDirections.actionHomeFragmentToUserDetailFragment(user.username)
             navController.navigate(action)
         }

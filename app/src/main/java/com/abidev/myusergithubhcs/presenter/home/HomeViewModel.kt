@@ -4,6 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.abidev.core.Resource
+import com.abidev.domain.home.usecase.GetDefaultUsersUseCase
+import com.abidev.domain.home.usecase.GetUsersUseCase
+import com.abidev.domain.home.usecase.UserDomainModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
