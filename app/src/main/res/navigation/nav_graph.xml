@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.abidev.myusergithubhcs.view.home.HomeFragment"
+        android:label="Pencarian User" >
+        <action
+            android:id="@+id/action_homeFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.abidev.myusergithubhcs.view.detail.UserDetailFragment"
+        android:label="Detail User">
+
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="" />
+
+    </fragment>
+</navigation>

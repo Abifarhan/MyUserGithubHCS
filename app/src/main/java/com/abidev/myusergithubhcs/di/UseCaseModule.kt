@@ -1,6 +1,8 @@
 package com.abidev.myusergithubhcs.di
 
 
+import com.abidev.domain.detail.usecase.GetUserDetailUseCase
+import com.abidev.domain.detail.usecase.GetUserDetailUseCaseImpl
 import com.abidev.domain.home.usecase.GetDefaultUsersUseCase
 import com.abidev.domain.home.usecase.GetDefaultUsersUseCaseImpl
 import com.abidev.domain.home.usecase.GetUsersUseCase
@@ -24,6 +26,6 @@ abstract class UseCaseModule {
         impl: GetDefaultUsersUseCaseImpl
     ): GetDefaultUsersUseCase
 
-//    @Binds
-//    abstract fun bindGetUserDetailUseCase(impl: GetUserDetailUseCaseImpl): GetUserDetailUseCase
+    @Binds
+    abstract fun bindGetUserDetailUseCase(impl: GetUserDetailUseCaseImpl): GetUserDetailUseCase
 }

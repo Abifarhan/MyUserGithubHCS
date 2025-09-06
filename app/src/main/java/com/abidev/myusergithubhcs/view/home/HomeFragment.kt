@@ -12,6 +12,8 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.abidev.core.Resource
+import com.abidev.domain.home.usecase.UserDomainModel
 import com.abidev.myusergithubhcs.databinding.FragmentHomeBinding
 import com.abidev.myusergithubhcs.presenter.home.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -53,11 +55,11 @@ class HomeFragment : Fragment() {
 
         binding.recyclerViewUsers.apply {
             setHasFixedSize(true)
-            layoutManager = LinearLayoutManager(View.getContext)
+            layoutManager = LinearLayoutManager(context)
             adapter = this@HomeFragment.adapter
             addItemDecoration(
                 DividerItemDecoration(
-                    View.getContext,
+                    context,
                     DividerItemDecoration.VERTICAL
                 )
             )

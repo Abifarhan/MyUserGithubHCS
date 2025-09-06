@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId = "com.abidev.myusergithubhcs"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -78,14 +78,14 @@ dependencies {
 
     implementation(libs.glide)
     kapt(libs.glide.compiler)
-
-    // Http
-    implementation(libs.bundles.retrofit)
-
-    // Sqlite
-    implementation(libs.bundles.room)
-    annotationProcessor(libs.room.compiler)
-    kapt(libs.room.compiler)
+//
+//    // Http
+//    implementation(libs.bundles.retrofit)
+//
+//    // Sqlite
+//    implementation(libs.bundles.room)
+//    annotationProcessor(libs.room.compiler)
+//    kapt(libs.room.compiler)
 
     testImplementation(libs.kotlin.test)
     testImplementation(libs.kotlinx.coroutines.test)
